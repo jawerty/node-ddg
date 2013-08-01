@@ -107,6 +107,34 @@ Output:
 
 Now you can get and manipulate data from the API in a clean and asynchronous fashion.
 
+### Access fields directly
+If you want to get one specific field and nothing else, you can use **the field you want as a method** and run it as seen below.
+
+	ddg.Definition('lion', function(err, data){
+		console.log(data)
+	});
+
+Output:
+
+	lion definition: a large heavily built social cat ('''Panthera leo''') of open or rocky areas chiefly of sub-Saharan Africa though once widely distributed throughout Africa and southern Asia that has a tawny body with a tufted tail and a shaggy blackish or dark brown mane in the male.
+
+Here's a list of all Instant Answer API root fields (supported)
+* Abstract
+* AbstractText 
+* AbstractSource
+* AbstractURL
+* Image
+* Heading
+* Answer
+* AnswerType
+* Definition (**used in example above**)
+* DefinitionSource
+* DefinitionURL
+* RelatedTopics 
+* Results
+* Type
+* Redirect
+
 # Contact
 Github - [jawerty](http://github.com/jawerty)
 
@@ -118,6 +146,7 @@ Website - <http://jawerty.github.io>
 
 # LICENSE
 MIT LICENSE--see file /LICENSE 
+
 
 
 
