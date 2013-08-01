@@ -120,7 +120,7 @@ If you want to get one specific field and nothing else, you can use **the field 
 
 Output:
 
-	lion definition: a large heavily built social cat ('''Panthera leo''') of open or
+	 lion definition: a large heavily built social cat ('''Panthera leo''') of open or
 	 rocky areas chiefly of sub-Saharan Africa though once widely distributed 
 	 throughout Africa and southern Asia that has a tawny body with a tufted tail and
 	  a shaggy blackish or dark brown mane in the male.
