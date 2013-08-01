@@ -1,0 +1,28 @@
+{
+    "name": "ddg",
+    "author": "Jared Wright <jawerty210@gmail.com>",
+    "description": "DuckDuck Go Instant Answers API wrapper for Node.js",
+    "tags" : ["node", "wrapper", "api", "ddg", "DuckDuckGo", "DuckDuckHack"],
+    "version": "0.0.1",
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/jawerty/node-ddg.git"
+    },
+    "engines": {
+        "node": ">= 0.4.1"
+    },
+    "dependencies": {
+      "request": "2.25.0"
+    },
+    "bugs" : {
+        "url" : "http://github.com/jawerty/node-ddg/issues"
+    },
+    "main" : "./index.js",
+    "scripts" : {
+      "test": "node ./test/test.js"
+    },
+    "licenses" : [{
+        "type" : "MIT",
+        "url" : "http://opensource.org/licenses/MIT"
+    }]
+}

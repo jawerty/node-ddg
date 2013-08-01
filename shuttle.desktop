@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Shuttle
+GenericName=Shuttle
+Comment=Simple SSH for Ubuntu
+Exec=shuttle
+Terminal=false
+Type=Application
+Categories=Network;FileTransfer;
+StartupNotify=false
