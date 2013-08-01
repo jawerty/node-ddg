@@ -2,7 +2,7 @@
     "name": "ddg",
     "author": "Jared Wright <jawerty210@gmail.com>",
     "description": "DuckDuck Go Instant Answers API wrapper for Node.js",
-    "tags" : ["node", "wrapper", "api", "ddg", "DuckDuckGo", "DuckDuckHack"],
+    "tags" : ["node", "wrapper", "api", "ddg", "DuckDuckGo", "DuckDuckHack", "Duck", "Go"],
     "version": "0.0.2",
     "repository": {
         "type": "git",

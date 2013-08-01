@@ -67,7 +67,9 @@ With Instant Answers API + node-ddg it becomes quite simple to get duckduckgo da
 Output:
 
 	http://duckduckgo.com/BioShock_(series)
-	-- BioShock (series) - BioShock is a first-person shooter video game series developed by Irrational Games—the first under the name 2K Boston/2K Australia—and designed by Ken Levine.
+	-- BioShock (series) - BioShock is a first-person shooter video game series 
+	developed by Irrational Games—the first under the name 2K Boston/2K Australia—and 
+	designed by Ken Levine.
 
 
 	http://duckduckgo.com/c/Video_games_set_in_the_1960s
@@ -109,6 +111,8 @@ Now you can get and manipulate data from the API in a clean and asynchronous fas
 
 ### Access fields directly
 If you want to get one specific field and nothing else, you can use **the field you want as a method** and run it as seen below.
+	
+	ddg = require('ddg');
 
 	ddg.Definition('lion', function(err, data){
 		console.log(data)
@@ -116,7 +120,10 @@ If you want to get one specific field and nothing else, you can use **the field 
 
 Output:
 
-	lion definition: a large heavily built social cat ('''Panthera leo''') of open or rocky areas chiefly of sub-Saharan Africa though once widely distributed throughout Africa and southern Asia that has a tawny body with a tufted tail and a shaggy blackish or dark brown mane in the male.
+	lion definition: a large heavily built social cat ('''Panthera leo''') of open or
+	 rocky areas chiefly of sub-Saharan Africa though once widely distributed 
+	 throughout Africa and southern Asia that has a tawny body with a tufted tail and
+	  a shaggy blackish or dark brown mane in the male.
 
 Here's a list of all Instant Answer API root fields (supported)
 * Abstract
