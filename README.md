@@ -1,5 +1,5 @@
 # node-ddg
-A node.js wrapper for DuckDuckGo's Instant Answers API. 
+Node.js wrapper for DuckDuckGo's Instant Answers API. 
 
 # Install
 ```
