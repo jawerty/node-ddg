@@ -6,6 +6,8 @@ Node.js wrapper for DuckDuckGo's Instant Answers API.
 $ npm install ddg
 ```
 
+It's that simple.
+
 # Usage
 
 	ddg = require('ddg');
