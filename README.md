@@ -9,28 +9,30 @@ $ npm install ddg
 It's that simple.
 
 # Usage
+```js
+ddg = require('ddg');
 
-	ddg = require('ddg');
-
-	ddg.query("duckduckgo", function(err, data){
-		console.log(data) // logs a dictionary with all return fields
-	});
+ddg.query("duckduckgo", function(err, data){
+	console.log(data) // logs a dictionary with all return fields
+});
+```
 
 See the instant answers API docs for more information on the return fields <https://api.duckduckgo.com/api>
 
 ### Custom options
-	ddg = require('ddg');
+```js
+ddg = require('ddg');
 
-	options = {
-			"useragent": "My duckduckgo app",
-			"no_redirects": "1",
-			"no_html": "0",
-	}
+options = {
+	"useragent": "My duckduckgo app",
+	"no_redirects": "1",
+	"no_html": "0",
+}
 
-	ddg.query('duckduckgo', options, function(err, data){
-		console.log(data)
-	});
-
+ddg.query('duckduckgo', options, function(err, data){
+	console.log(data)
+});
+```
 List of all options
 * useragent
 * format (json or xml)
@@ -41,31 +43,31 @@ List of all options
 
 ### Getting query AbstractText
 Here I'm making a query for 'bioshock' and loging the AbstractText taken from Wikipedia.
-	
-	ddg = require('ddg');
+```js
+ddg = require('ddg');
 
-	ddg.query('bioshock', options, function(err, data){
-		console.log(data.AbstractText)
-	});
-
+ddg.query('bioshock', options, function(err, data){
+	console.log(data.AbstractText)
+});
+```
 Output:
 
 	BioShock is a first-person shooter video game developed by Irrational Games (at the time, named 2K Boston), and published by 2K Games.
 
 ### Generating information from results (url,text)
 With Instant Answers API + node-ddg it becomes quite simple to get duckduckgo data.
+```js
+ddg = require('ddg')
 
-	ddg = require('ddg')
-
-	ddg.query('bioshock', function(err, data){
-		results = data.RelatedTopics; //related topics is a list of 'related answers'
-		for (i=0;i<results.length;i++) {
-			console.log(''+results[i].FirstURL)
-			console.log('-- '+results[i].Text)
-			console.log('\n')
-		}
-	});
-
+ddg.query('bioshock', function(err, data){
+	results = data.RelatedTopics; //related topics is a list of 'related answers'
+	for (i=0;i<results.length;i++) {
+		console.log(''+results[i].FirstURL)
+		console.log('-- '+results[i].Text)
+		console.log('\n')
+	}
+});
+```
 Output:
 
 	http://duckduckgo.com/BioShock_(series)
@@ -113,13 +115,13 @@ Now you can get and manipulate data from the API in a clean and asynchronous fas
 
 ### Access fields directly
 If you want to get one specific field and nothing else, you can use **the field you want as a method** and run it as seen below.
-	
-	ddg = require('ddg');
+```js
+ddg = require('ddg');
 
-	ddg.Definition('lion', function(err, data){
-		console.log(data)
-	});
-
+ddg.Definition('lion', function(err, data){
+	console.log(data)
+});
+```
 Output:
 
 	 lion definition: a large heavily built social cat ('''Panthera leo''') of open or
